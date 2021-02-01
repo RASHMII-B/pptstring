@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type ="button"  placeholder="length" value="length" id="len" onclick="myfun()"> 
+<input type ="button"  placeholder="length" value="indexof" id="len" onclick="indexof()"> 
+<input type ="button"  placeholder="length" value="lastindexof" id="len" onclick="lastindexof()"> 
+<input type ="button"  placeholder="length" value="search" id="len" onclick="search()"> 
+<input type ="button"  placeholder="length" value="slice" id="len" onclick="slice()"> 
+<input type ="button"  placeholder="length" value="substr" id="len" onclick="substr()"> 
+<input type ="button"  placeholder="length" value="replace" id="len" onclick="replace()"> 
+<input type ="button"  placeholder="length" value="toupper" id="len" onclick="toupper()"> 
+<input type ="button"  placeholder="length" value="tolower" id="len" onclick="tolower()"> 
+<input type ="button"  placeholder="length" value="concat" id="len" onclick="concat()"> 
+<input type ="button"  placeholder="length" value="trim" id="len" onclick="trim()"> 
+<input type ="button"  placeholder="length" value="padstart" id="len" onclick="padstart()"> 
+<input type ="button"  placeholder="length" value="padend" id="len" onclick="padend()"> 
+<input type ="button"  placeholder="length" value="charat" id="len" onclick="charat()"> 
+<input type ="button"  placeholder="length" value="charcodeat" id="len" onclick="charcodeat()"> 
+
+<p id="demo"></p>
+
+<script>
+function myfun(){
+var txt = "ppt";
+var sln = txt.length;
+document.getElementById("demo").innerHTML = sln;}
+
+function indexof(){
+     var index= "this ppt is on methods!";
+ var output=index.indexOf("is");
+document.getElementById("demo").innerHTML = output;}
+
+function lastindexof(){
+    var str = "this is string one and again string!";
+var pos = str.lastIndexOf("string");
+document.getElementById("demo").innerHTML = pos;}
+
+function search(){
+ var str = "search method";
+var output=str. search("method"); 
+document.getElementById("demo").innerHTML =output;}
+
+function slice(){
+var str = "css3 is latest version";
+var res = str.slice(15, 22);
+document.getElementById("demo").innerHTML =res;}
+
+
+function substr(){
+    var index= "css3 is latest version";
+ var res= index. substr(15, 21);
+document.getElementById("demo").innerHTML = res;}
+
+
+function replace(){
+    var txt = "html is latest version";
+  var res= txt. replace("html" ,"html5");
+document.getElementById("demo").innerHTML = res;}
+
+function toupper(){
+    var str = "css3 is latest version";
+ var res= str. toUpperCase();  
+document.getElementById("demo").innerHTML =res;}
+
+ function tolower(){
+    var str = "css3 is latest version";
+ var res= str. toLowerCase();  
+document.getElementById("demo").innerHTML =res;}  
+
+function concat(){
+    var str = "css3 is latest version";
+ var res= str. toUpperCase();  
+document.getElementById("demo").innerHTML =res;}
+
+function trim(){
+ var str = "     Hello World!     ";
+  var trim=str.trim();
+document.getElementById("demo").innerHTML =trim;}
+
+function padstart(){
+    var str = "5";
+   var res = str . padStart(4,1); 
+   document.getElementById("demo").innerHTML =res;}
+
+function padend(){
+    var str = "5";
+   var res = str . padEnd(4,1); 
+   document.getElementById("demo").innerHTML =res;}
+
+
+function charat(){
+        var str = "HELLO WORLD";
+          var res = str . charAt(0); 
+   document.getElementById("demo").innerHTML =res;}
+
+   
+function charcodeat(){
+       var str = "HELLO WORLD";
+        var res = str . charCodeAt(0);
+   document.getElementById("demo").innerHTML =res;}
+</script>
+
+</body>
+</html>
